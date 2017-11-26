@@ -18,7 +18,7 @@
 	  					fees[type] = (sales*.02)+312;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "biannual") {
-	  					fees[type] = (sales*.02)+290;
+	  					fees[type] = (sales*.02)+279;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "triannual") {
 	  					fees[type] = (sales*.02)+261;
@@ -35,7 +35,7 @@
 	  					fees[type] = (sales*.01)+852;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "biannual") {
-	  					fees[type] = (sales*.01)+748;
+	  					fees[type] = (sales*.01)+759;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "triannual") {
 	  					fees[type] = (sales*.01)+711;
@@ -49,13 +49,13 @@
 	  					fees[type] = (sales*.005)+3588;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "annual") {
-	  					fees[type] = (sales*.005)+3230;
+	  					fees[type] = (sales*.005)+3192;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "biannual") {
-	  					fees[type] = (sales*.005)+2870;
+	  					fees[type] = (sales*.005)+2820;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "triannual") {
-	  					fees[type] = (sales*.005)+2691;
+	  					fees[type] = (sales*.005)+2628;
 	  				}
 	  				else {
 	  					alert("Error! Choose a current cycle!")
@@ -76,7 +76,7 @@
 	  					console.log('currentannual monthly');
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "biannual") {
-	  					fees[type] = (sales*.029)+(orders*.3)+290;
+	  					fees[type] = (sales*.029)+(orders*.3)+279;
 	  					console.log('currentbiannual monthly');
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "triannual") {
@@ -96,7 +96,7 @@
 	  					fees[type] = (sales*.027)+(orders*.3)+852;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "biannual") {
-	  					fees[type] = (sales*.027)+(orders*.3)+748;
+	  					fees[type] = (sales*.027)+(orders*.3)+759;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "triannual") {
 	  					fees[type] = (sales*.027)+(orders*.3)+711;
@@ -110,13 +110,13 @@
 	  					fees[type] = (sales*.024)+(orders*.3)+3588;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "annual") {
-	  					fees[type] = (sales*.024)+(orders*.3)+3230;
+	  					fees[type] = (sales*.024)+(orders*.3)+3192;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "biannual") {
-	  					fees[type] = (sales*.024)+(orders*.3)+2870;
+	  					fees[type] = (sales*.024)+(orders*.3)+2820;
 	  				}
 	  				else if ($(`.${type}-cycle input:checked`).val() === "triannual") {
-	  					fees[type] = (sales*.024)+(orders*.3)+2691;
+	  					fees[type] = (sales*.024)+(orders*.3)+2628;
 	  				}
 	  				else {
 	  					alert("Error! Choose a current cycle!")
