@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopify Plan Pricing Calculator</title>
+
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="assets/shopify-favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+
+</head>
+<body id="override">
+
+	<div class="wrapper">
+		<div class="title">
+			<div class="logo">
+				<img src="assets/shopify_logo_black.png" alt="">
+			</div>
+			<h1>Fees Calculator</h1>
+			<h2 style="font-style: italic;">(currently only for Online Store Channel sales)</h2>
+		</div>	
+		<form id="form">
+			<div class="metrics form-inline">  
+				<div class="form-group">
+				    <label class="sr-only" for="exampleInputAmount">Yearly Sales</label>
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+				      <input type="text" class="form-control" id="sales" placeholder="Yearly Sales">
+				    </div>
+				</div>
+				<div class="form-group">
+				    <input type="text" class="form-control" id="orders" placeholder="Number of Orders">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-5"></div>
+				<div class="col-xs-3">
+					<div class="checkbox">
+						<label>
+						  <input type="checkbox" class="gateway"> 3rd Party Gateway?
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-4"></div>
+			</div>
+				
+				
+			<div class="comparison">	
+				<div class="current">	
+					<h2>Current Plan</h2>
+					<h3>Choose Plan:</h3>
+					<div class="current-plan radio-div">
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" class="current-basic" id="basic" value="basic"> Basic
+						</label>
+						<label class="radio-inline">
+						 	<input type="radio" name="inlineRadioOptions" class="current-shopify" id="shopify" value="shopify"> Shopify
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" class="current-advanced" id="advanced" value="advanced"> Advanced
+						</label>
+					</div>
+					<h3>Choose Billing Cycle:</h3>
+					<div class="current-cycle radio-div">
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions2" class="current-monthly" id="monthly" value="monthly"> Monthly
+						</label>
+						<label class="radio-inline">
+						 	<input type="radio" name="inlineRadioOptions2" class="current-annual" id="annual" value="annual"> Annual
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions2" class="current-biannual" id="biannual" value="biannual"> Biannual
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions2" class="current-triannual" id="triannual" value="triannual"> Triannual
+						</label>
+					<div  class="results"><p class="current-fees-text"></p></div>
+					</div>
+					<div class="current-fees">
+						<p class="current-annual"></p>
+						<p class="currently-monthly"></p>
+					</div>
+				</div>
+				<div class="proposed">	
+					<h2>Proposed Plan</h2>
+					<h3>Choose Plan:</h3>
+					<div class="proposed-plan radio-div">
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions3" class="proposed-basic" id="basic" value="basic"> Basic
+						</label>
+						<label class="radio-inline">
+						 	<input type="radio" name="inlineRadioOptions3" class="proposed-shopify" id="shopify" value="shopify"> Shopify
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions3" class="proposed-advanced" id="advanced" value="advanced"> Advanced
+						</label>
+					</div>
+					<h3>Choose Billing Cycle:</h3>
+					<div class="proposed-cycle radio-div">
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions4" class="proposed-monthly" id="monthly" value="monthly"> Monthly
+						</label>
+						<label class="radio-inline">
+						 	<input type="radio" name="inlineRadioOptions4" class="proposed-annual" id="annual" value="annual"> Annual
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions4" class="proposed-annual" id="biannual" value="biannual"> Biannual
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions4" class="proposed-annual" id="triannual" value="triannual"> Triannual
+						</label>
+						<div class="results">
+							<p class="proposed-fees-text"></p>
+							<p class="advice"></p></div>
+					</div>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-5"></div>
+				<div class="col-xs-1"><button type="submit" class="btn btn-default">Calculate</button></div>
+				<div class="col-xs-6"></div>
+			</div>
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+	<script src="app.js"></script>
+</body>
+</html>
