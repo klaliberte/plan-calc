@@ -151,7 +151,7 @@
 						let greaterPlan = (fees.proposed - fees.current)/12
 					  	$('.current-fees-text').text(`You are currently spending $${fees.current} per year.`)
 					  	$('.proposed-fees-text').text(`You would be spending $${fees.proposed} per year.`) 
-					  	$('.advice').text(`You will be spending $${greaterPlan.toFixed(2)} per month, but the enhanced features might be worth it!`) 
+					  	$('.advice').text(`You would be spending $${greaterPlan.toFixed(2)} more per month, but the enhanced features might be worth it!`) 
 				  	};    	
 	  			});
 	  		}
