@@ -148,9 +148,10 @@
 					  	$('.proposed-fees-text').text(`You could be spending $${fees.proposed} per year!`) 
 					  	$('.advice').text(`That's a savings of $${monthSave.toFixed(2)} per month!`) 
 				  	} else {
+						let greaterPlan = (fees.proposed - fees.current)/12
 					  	$('.current-fees-text').text(`You are currently spending $${fees.current} per year.`)
 					  	$('.proposed-fees-text').text(`You would be spending $${fees.proposed} per year.`) 
-					  	$('.advice').text(`So... you shouldn't pick this plan.`) 
+					  	$('.advice').text(`You will be spending $${greaterPlan.toFixed(2)} per month, but the enhanced features might be worth it!`) 
 				  	};    	
 	  			});
 	  		}
